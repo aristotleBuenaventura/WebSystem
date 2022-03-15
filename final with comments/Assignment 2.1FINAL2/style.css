@@ -1,0 +1,152 @@
+/* CSS style for the BUENAVENTURA_MORAGA_PS2b_Prelim.html, BUENAVENTURA_MORAGA_PS2b_Midterm, and BUENAVENTURA_MORAGA_PS2b_Finals */
+body{
+    background: #7e736b;
+    font-family:Consolas;
+    font-size: large;
+    min-width: 960px; 
+    margin: 0 auto;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #f5ddcb;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    padding: 34px 0;
+    padding-top: 0;
+}
+
+.header .header-brand {
+    font-family:Consolas;
+    font-size: 35px;
+    font-weight: 1000;
+    color: #111;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    text-decoration: none;
+}
+
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 100px;
+    padding: 80px;
+    width: auto;
+    min-width: 960px;
+    
+    
+    
+    
+}
+
+.title{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    min-width: 500px;
+    border:solid;
+    grid-row: 1/3;
+    grid-column: 2/5;
+    background: white;
+    padding-bottom: 50px;
+}
+
+
+form{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+}
+
+.button1{
+    margin-right: 20px ;
+    font-size: 18px;
+}
+
+
+
+.wrap{
+    display: flex;
+    margin: auto;
+}
+
+
+.textfield{
+    margin-top: 15px;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.animated-button {
+    position: fixed;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    background-color: #323333;
+    background-size: 20px 20px;
+    border: 1px solid #555;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.animated-button:after {
+    position: absolute;
+    top: 50%;
+    right: 0.6em;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    content: "»";
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.animated-button:hover {
+    padding: 20px 60px 20px 20px;
+}
+.animated-button:hover:after {
+    right: 1.2em;
+    opacity: 1;
+}
+
+@-webkit-keyframes loading-button-animation {
+from {
+    background-position: 0 0;
+}
+to {
+    background-position: 40px 0;
+}
+}
+
+/* @keyframes loading-button-animation {
+from {
+    background-position: 0 0;
+}
+to {
+    background-position: 40px 0;
+}
+} */

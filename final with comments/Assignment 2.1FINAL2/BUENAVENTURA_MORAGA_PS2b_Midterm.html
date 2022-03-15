@@ -1,0 +1,69 @@
+<!--BUENAVENTURA, MORAGA_Assignment 2.1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card</title>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!--External link for the javascript-->
+    <script src="scriptb.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <!-- Start of Body -->
+    <!-- Header Section -->
+    <div class="header"> 
+        <div class="header-brand">REPORT CARD </div>
+    </div>
+
+    <!-- Midterm Grade -->
+    <section id="container">
+        <div class="box1">
+            <div class="grade">
+                <div class="title">MIDTERM GRADE</div>
+                <form name = "mainForm">
+                    <div class="wrap">
+                        <div class="task">
+                            <p>Assignment: 
+                            <p> Quiz: 
+                            <p> Laboratory Activities: 
+                            <p> Midterm Examination: 
+                            <p> Class Standing:
+                            <p> Midterm Grade:
+                        </div>
+                        
+                        <!-- Text field where the user inputs their grade or data in each task -->
+                        <div class="textfield">
+                            <input type = "text" id="assignmentMidterm"/></p>
+                            <input type = "text" id="quizMidterm"/></p>
+                            <input type = "text" id="activityMidterm"/></p>
+                            <input type = "text" id="examMidterm"/></p>
+                            <input type = "text" id="standingMidterm"
+                            readonly="readonly"/></p>   
+                            <input type = "text" id="gradeMidterm"
+                            readonly="readonly"/></p>  
+                        </div>
+                    </div>
+
+                    <!-- Buttons Section -->
+                    <div class="buttons">
+                        <!-- Computes the midterm grade -->
+                        <input class="button1"  type= "button" value="Compute"
+                        onclick="computeMidterm()"/>
+                        <!-- Reset or clear the inputted data in each text field -->
+                        <input class="button1"  type= "reset" value="Reset"
+                        onclick="deleteLocalMid()"/>
+                    </div>  
+
+                    <!-- Button with link to proceed to final web page -->
+                    <a href="BUENAVENTURA_MORAGA_PS2b_Finals.html"><button type="button" name="button" 
+                        class="animated-button">Proceed to Finals</button></a>
+                    </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

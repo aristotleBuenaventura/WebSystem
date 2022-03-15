@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>The Flower Shop</title>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+	</head>
+    <body>
+        <header>
+            <a href="PS1-flowershop.html" class="header-brand">FlowerShop.com</a>
+        <nav>
+            <ul>
+                <li><a href="PS1-flowershop.html">Home</a></li>
+                <li><a href="PS1-flowershop.html">Sevices</a></li>
+                <li><a href="PS1-flowershop.html">About Us</a></li>
+                <li><a href="PS1-flowershop.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="header">
+            <section class="index-banner">
+                <h1>Welcome to FlowerShop.com!</h1>
+                <h2>Welcome to the FlowerShop.com recognized as one of Philippines finest full-service florist. 
+                    We pride ourselves on providing the freshnest flowers, plants, and ideas in our industry. 
+                    We are located in Marikina City, Philippines</h2>
+            </section>
+        </div>
+        <div class="contentContainer" id="rose">
+            <div class="image"><img src="imgs/rose.jpg"></div>
+            <div class="contentTitle">
+                <p>La Vie En Rose</p>
+                <div class="button1">
+                    <button onclick="openModel('myModal')">View more</button>
+                    <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>La Vie En Rose</h1>
+                        <p>A sweet surprise that you can give any day of the week for any occasion without having to 
+                            break the bank! A beautiful and simple bouquet that can sweeten the birthday celebrant, 
+                            make someone smile as a sorry gift, or delight your significant other!</p>
+                        <h2>Blooms:</h2>
+                        <p>Red Roses</p>
+                        <p>Light Pink Roses</p>
+                        <p>Dark Pink Roses</p>
+                        <p>Alstromeria White</p>
+                        <h2>Price:  &#8369; 5,990</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentContainer" id="romance">
+            <div class="contentTitle">
+                <p>Hot Romance</p>
+                <div class="button1">
+                    <button onclick="openModel('bravoModal')">View more</button>
+                    <div id="bravoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Hot Romance</h1>
+                        <p>Up the romance with this beautiful and classic
+                             arrangement of red roses that is hand wrapped to perfection! 
+                             If you're looking to make someone smile on any occasion without 
+                             breaking the bank, this bouquet is your best bet!</p>
+                        <h2>Blooms:</h2>
+                        <p>Red Roses</p>
+                        <p>White Statice</p>
+                        <p>Tea leaf</p>
+                        <h2>Price:  &#8369; 6,990</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image"><img src="imgs/romance.jpg"></div>
+        </div>
+        <div class="contentContainer" id="lily">
+            <div class="image"><img src="imgs/lily.jpg"></div>
+            <div class="contentTitle">
+                <p>Lovely Lillian</p>
+                <div class="button1">
+                    <button onclick="openModel('charlieModal')">View more</button>
+                    <div id="charlieModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Lovely Lillian</h1>
+                        <p>Beautiful pink lilies, decorated with red berries, golden rod,
+                             and papua leaves; our Lovely Lillian flower bouquet is a sweet 
+                             gesture to make someone's day bright, blooming, and beautiful.</p>
+                        <h2>Blooms:</h2>
+                        <p>Berry Red</p>
+                        <p>Pink Lily</p>
+                        <h2>Price:  &#8369; 8,990</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentContainer" id="sun">
+            <div class="contentTitle">
+                <p>Sunday Sun</p>
+                <div class="button1">
+                    <button onclick="openModel('deltaModal')">View more</button>
+                    <div id="deltaModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Sunday Sun</h1>
+                        <p>Bask in the light of our Sunday Sunflower arrangement - 
+                            a bouquet brimming with purple statice flowers, soi, and 
+                            papua leaves, with a bright golden sunflower right in between. 
+                            Send this beautiful flower bouquet to someone, and brighten up their day.</p>
+                        <h2>Blooms:</h2>
+                        <p>Sunflower</p>
+                        <p>Statice Purple</p>
+                        <h2>Price:  &#8369; 9,990</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image"><img src="imgs/sun.jpg"></div>
+        </div>
+            <script>
+                function openModel (modalId) {
+                    var modal = document.getElementById(modalId);
+                    var close = modal.getElementsByClassName("close")[0];
+                    modal.style.display = "block";
+
+                    close.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+            </script>  
+        </div>
+        <footer class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="PS1-flowershop.html">Home</a></li>
+                    <li><a href="PS1-flowershop.html">Sevices</a></li>
+                    <li><a href="PS1-flowershop.html">About Us</a></li>
+                    <li><a href="PS1-flowershop.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <h4>&copy; 2021 FlowerShop.com. All Rights Reserved.</h3>
+            
+        </footer>
+    </body>
+</html>

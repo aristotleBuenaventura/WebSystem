@@ -1,0 +1,17 @@
+- navbar, use company logo 
+- enlarge text in landing page
+- see more button 
+
+
+my changes:
+-add see more button, assigned to hotel or stuff
+-mega drop down menu
+-button up down
+-log in register
+
+
+to do: 
+- inquiries incl. jquery
+- about us page
+
+
